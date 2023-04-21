@@ -9,11 +9,11 @@
     "start": "node index.js"
   },
   "bin": {
-    "jj-helloworld": "./index.js"
+    "jj-helloworld": "./cli.cjs"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/jj-helloworld.git"
+    "url": "https://github.com/JJBussert/jj-helloworld.git"
   },
   "keywords": [
     "cli",
