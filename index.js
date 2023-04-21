@@ -2,10 +2,13 @@
 
 function helloWorld() {
     console.log('Hello World!');
-}
-
-if (require.main === module) {
+  }
+  
+  const isMainModule = import.meta.url === new URL(import.meta.url).pathname;
+  
+  if (isMainModule) {
     helloWorld();
-} else {
-    module.exports = helloWorld;
-}
+  }
+  
+  export { helloWorld };
+  
