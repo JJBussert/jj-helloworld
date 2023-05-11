@@ -50,7 +50,6 @@ The following scripts are available for development and testing:
 - npm test: Runs the test-cli and test-cli-override scripts.
 - npm run test-cli: Tests the default behavior of the CLI (Hello World!).
 - npm run test-cli-override: Tests the CLI with the --world argument (Hello ABC!).
-- npm start: Executes the main index.js file.
 
 ## License
 
