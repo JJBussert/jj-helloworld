@@ -4,14 +4,13 @@
   "description": "A simple CLI tool that prints 'Hello World!'",
   "type": "module",
   "main": "index.js",
-  "scripts": {
-    "test": "npm run test-cli && npm run test-cli-override",
-    "test-cli": "node ./cli.cjs",
-    "test-cli-override": "node ./cli.cjs --world ABC",
-    "start": "node index.js"
-  },
   "bin": {
-    "jj-helloworld": "./cli.cjs"
+    "jj-helloworld": "./cli.js"
+  },
+  "scripts": {
+    "test": "npm link . && npm run test-cli && npm run test-cli-override && npm unlink .",
+    "test-cli": "jj-helloworld",
+    "test-cli-override": "jj-helloworld --world ABC"
   },
   "repository": {
     "type": "git",
